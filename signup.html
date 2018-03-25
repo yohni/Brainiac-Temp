@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>Olimpiade Biology 2018</title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport'
+  />
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+  <!-- CSS Files -->
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="./assets/css/now-ui-kit.css?v=1.1.0" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/stylelogin.css">
+<body> 
+     <center>  
+       <h2 class="Title-Signup">Pendaftaran</h2>
+    <div class="signup-wrapper">
+        <form>
+            <div class="form-group name">
+              <label for="Nama">Nama</label>
+              <div class="input-group">
+                <span class="input-group-addon">
+                    <i class="fa fa-user"></i>
+                </span>
+              <input type="text" class="form-control" id="Nama" placeholder="Masukan Nama" required>
+              
+            </div>
+            <div class="form-group username">
+              <label for="Email">Email</label>
+              <div class="input-group">
+                <span class="input-group-addon">
+                    <i class="fa fa-envelope-open"></i>
+                </span>
+              <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Masukkan Email" required>
+              
+            </div>
+            <div class="form-group pass">
+              <label for="Password">Sandi</label>
+              <div class="input-group">
+                <span class="input-group-addon">
+                    <i class="fa fa-unlock-alt"></i>
+                </span>
+              <input type="password" class="form-control" id="Password" placeholder="Masukkan Kata Sandi" required>
+            </div>
+
+            <div class="form-group pass">
+              <label for="rePassword">Konfirmasi Sandi</label>
+              <div class="input-group">
+                <span class="input-group-addon">
+                    <i class="fa fa-unlock-alt"></i>
+                </span>
+              <input type="password" class="form-control" id="rePassword" placeholder="Masukkan Ulang Kata Sandi" required>
+            </div>
+            <div id="matchCheck"></div>
+            <center>
+           
+            <button type="submit" class="btn btn-primary btn-login" id="btn-regist-submit">Daftar</button>
+         
+            <br><br>
+            <medium class="linktoregis"><a href="#" >Sudah Punya Akun?</a></medium>
+          
+          </center> 
+          </form>
+    </div>
+    </center>
+
+
+</body>
+<!--   Core JS Files   -->
+<script src="./assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
+<script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
+<script src="./assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+<script src="./assets/js/plugins/bootstrap-switch.js"></script>
+<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+<script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+<!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+<script src="./assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
+<!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
+<script src="./assets/js/now-ui-kit.js?v=1.1.0" type="text/javascript"></script>
+
+<script>
+  $('#btn-regist-submit').click(function(){
+    var noNumb=/[0-9]+$/;
+    // console.log($('#Nama').val().match(noNumb));
+    
+    if($('#Nama').val().match(noNumb) != null){
+      alert("Nama tidak boleh menggunakan angka");
+    };
+
+    if($('#Email').val().match(/^.{1,}@.{2,}\..{2,}/)==null){
+      alert('Mohon masukan email yang benar');
+    };
+
+    
+  });
+
+  $(function(){
+    $('#rePassword').keyup(function(){
+      var pass = $('Password').val();
+      $('#matchCheck').html(pass == $(this).val() ? "Password Sesuai" : "Password Tidak Cocok");
+    });
+  });
+</script>
+
+
+
+</html>
+
+<!-- 
+background: rgba(89,255,95,1);
+background: -moz-linear-gradient(left, rgba(89,255,95,1) 0%, rgba(10,255,137,1) 54%, rgba(68,217,220,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(89,255,95,1)), color-stop(54%, rgba(10,255,137,1)), color-stop(100%, rgba(68,217,220,1)));
+background: -webkit-linear-gradient(left, rgba(89,255,95,1) 0%, rgba(10,255,137,1) 54%, rgba(68,217,220,1) 100%);
+background: -o-linear-gradient(left, rgba(89,255,95,1) 0%, rgba(10,255,137,1) 54%, rgba(68,217,220,1) 100%);
+background: -ms-linear-gradient(left, rgba(89,255,95,1) 0%, rgba(10,255,137,1) 54%, rgba(68,217,220,1) 100%);
+background: linear-gradient(to right, rgba(89,255,95,1) 0%, rgba(10,255,137,1) 54%, rgba(68,217,220,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59ff5f', endColorstr='#44d9dc', GradientType=1 );
+ -->
