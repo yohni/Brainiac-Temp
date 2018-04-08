@@ -1059,3 +1059,107 @@ box-shadow: 0px 6px 131px -13px rgba(0,0,0,0.75); */
     font-size: 4rem;
   }
 }
+
+
+.i-accordion .panel-heading,
+.d-accordion .panel-heading,
+.accordion-2a .panel-heading,
+.accordion-2b .panel-heading,
+.accordion-3 .panel-heading { cursor: pointer; }
+.d-accordion .panel-heading.collapsed .fa-chevron-up:before { content: '\f078'; }
+
+
+.panel-heading{
+  border: rgb(202, 202, 202) solid 2px;
+  padding-top: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  /* border-radius: 5px; */
+  
+}
+
+.panel-heading h6{
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.faq-wrapper{
+  width: 100%;
+  
+}
+
+
+.faq-main{
+  display: block;
+  text-align: left;
+  max-width: 70%;
+  background: #fff;
+  padding: 0;
+  
+}
+
+
+.bg-clip{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 500px;
+  z-index: -1;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
+}
+
+.input-group-addon{
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-control{
+  background: #fff;
+}
+
+
+.form-control + .input-group-addon:not(:first-child) {
+  border-left: 0;
+}
+
+.input-group .form-control + .input-group-addon {
+  padding: 5px 9px 5px 0;
+  
+}
+
+.input-group-addon i{
+  line-height: 3rem;
+  font-size: 2rem;
+  width: auto;
+}
+
+.input-group-focus{
+  background: #fff;
+  border-radius: 30px;
+}
+
+.input-group{
+  background: #fff;
+  border-radius: 30px;
+}
+.input-group-focus{
+  border-color: rgb(0, 255, 110);
+}
+
+.input-group-addon i:hover{
+  cursor: pointer;
+  color: #838181;
+}
+
+.title-page{
+  font-family: 'Quicksand';
+  font-weight: 800;
+  color: #f1f1f1;
+}
+
+.faq-open{
+  color: #fff;
+}
+
+.panel-body{
+  padding: 10px 18px 10px 18px;
+}
