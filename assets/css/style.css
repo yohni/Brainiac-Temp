@@ -772,8 +772,6 @@ Main Components
 }
 
 .panel-heading {
-  
-  
   padding-left: 10px;
   padding-right: 10px;
   /* border-radius: 5px; */
@@ -781,7 +779,6 @@ Main Components
 
 .panel-heading h6 {
   text-transform: capitalize;
-  
 }
 
 .faq-wrapper {
@@ -878,10 +875,9 @@ Main Components
   border: none;
   padding-top: 10px;
   padding-bottom: 10px;
-  
 }
 
-.panel-title{
+.panel-title {
   font-family: 'Montserrat';
   font-weight: 400;
 }
@@ -894,29 +890,28 @@ Main Components
   box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.3); */
 }
 
-.active-ac{
+.active-ac {
   color: rgb(0, 255, 110);
   background: rgba(163, 163, 163, 0.2);
   border-left: rgb(0, 255, 115) solid 5px;
 }
 
-
-.table{
+.table {
   width: 100%;
   margin-bottom: 0;
 }
 
-.table td{
+.table td {
   border: none;
 }
 
-.footer-line{
-
+.footer-line {
   border-radius: 25%;
   width: 80%;
   background: rgb(228, 228, 228);
 }
-.back{
+
+.back {
   color: #fff;
   font-size: 3rem;
   float: left;
@@ -926,36 +921,90 @@ Main Components
   transition: .2s ease-out;
 }
 
-.back:hover{
+.back:hover {
   transform: scale(1.1);
 }
 
-.back a{
+.back a {
   color: #fff;
 }
-.copyr{
+
+.copyr {
   margin-top: 10px;
   margin-bottom: 20px;
 }
 
-@media only screen and (max-width:800px){
-  .faq-main{
+.art-title {
+  font-family: 'Montserrat';
+  margin-top: 100px;
+  font-weight: 600;
+  font-size: 42px;
+  letter-spacing: -2px;
+  margin-bottom: 1px;
+}
+
+.art-date {
+  font-size: 1.5rem;
+}
+
+.art-content {
+  text-align: justify;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 1.58;
+}
+
+.art-img-wrapper {
+  margin: 80px auto;
+  display: block;
+  text-align: center;
+}
+
+.art-img {
+  display: block;
+  margin: auto;
+  max-width: 80%;
+  -webkit-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.3);
+  transition: .5s ease-out;
+}
+
+.art-img:hover{
+  transform: scale(1.05);
+}
+
+@media only screen and (max-width:911px) {
+  .faq-main {
     max-width: 90%;
   }
-  .bg-primer{
+  .bg-primer {
+    /* clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%); */
+  }
+  .footer {
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
   }
-  .footer{
-    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
-  }
-
-  .back{
+  .back {
     left: 10px;
     top: 10px;
+    w
   }
-
-  .display-b{
+  .display-b {
     font-size: 1.5rem;
   }
+  .sidebar-collapse [class*="navbar-expand-"] .navbar-collapse {
+    width: 200px;
+  }
+  /* .navbar .navbar-toggler{
+    position: relative;
+    left: 50px;
+  } */
+  .art-content {
+    font-size: 18px;
+  }
 
+  .art-img-wrapper{
+    margin: 30px auto;
+  }
 }
